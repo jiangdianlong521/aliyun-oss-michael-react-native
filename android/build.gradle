@@ -18,14 +18,13 @@ def safeExtGet(prop, fallback) {
 
 android {
 
-    compileSdkVersion safeExtGet('compileSdkVersion', 27)
-    buildToolsVersion safeExtGet('buildToolsVersion', '23.0.1')
-    buildToolsVersion safeExtGet('targetSdkVersion', 27)
-
     defaultConfig {
         minSdkVersion 16
         versionCode 1
         versionName "1.0"
+        compileSdkVersion safeExtGet('compileSdkVersion', 27)
+        buildToolsVersion safeExtGet('buildToolsVersion', '23.0.1')
+        targetSdkVersion safeExtGet('targetSdkVersion', 27)
     }
     lintOptions {
         abortOnError false

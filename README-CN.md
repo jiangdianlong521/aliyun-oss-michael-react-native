@@ -1,6 +1,6 @@
 # Aliyun OSS SDK for React Native
 
-## [README of English](https://github.com/aliyun/aliyun-oss-react-native/blob/master/README.md)
+## [README of English](https://github.com/aliyun/aliyun-oss-michael-react-native/blob/master/README.md)
 
 ## 简介
 
@@ -33,25 +33,25 @@
 
 ## 安装
 
-注意: react-native版本建议0.44.0及以上，建议使用fackebook官方[react-native-cli](https://www.npmjs.com/package/react-native-cli)或者[create-react-native-app](https://www.npmjs.com/package/create-react-native-app)脚手架进行react native项目构建。aliyun-oss-react-native可通过npm或者yarn安装
+注意: react-native版本建议0.44.0及以上，建议使用fackebook官方[react-native-cli](https://www.npmjs.com/package/react-native-cli)或者[create-react-native-app](https://www.npmjs.com/package/create-react-native-app)脚手架进行react native项目构建。aliyun-oss-michael-react-native可通过npm或者yarn安装
 
 * npm
 
 ```script
-npm install aliyun-oss-react-native  --save
+npm install aliyun-oss-michael-react-native  --save
 ```
 
 * yarn
 
 ```script
-yarn install aliyun-oss-react-native --save
+yarn install aliyun-oss-michael-react-native --save
 ```
 ### 自动安装
 
 react native项目下运行`react-native link`命令
 
 ```script
-react-native link aliyun-oss-react-native
+react-native link aliyun-oss-michael-react-native
 ```
 
 注意：由于react native脚手架不同版本的问题，有时候自动安装可能会失败，可手动添加android和iOS的的依赖库。同样为了兼容IPv6-Only网络，iOS工程中需参考aliyun-oss-ios-sdk说明中引入以下包。
@@ -67,25 +67,25 @@ react-native link aliyun-oss-react-native
 
 - **CocoaPods**
 ```
-pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native'
+pod 'aliyun-oss-michael-react-native', :path => '../node_modules/aliyun-oss-michael-react-native'
 ````
 
 - **非CocoaPods**
 
-1. 在XCode  Project navigator面板中, 右键单击工程Libraries文件 ➜ 选择`Add Files to <...>` 进入 `node_modules` ➜ `aliyun-oss-react-native` ➜ `ios` ➜ select `RNAliyunOSS.xcodeproj`
+1. 在XCode  Project navigator面板中, 右键单击工程Libraries文件 ➜ 选择`Add Files to <...>` 进入 `node_modules` ➜ `aliyun-oss-michael-react-native` ➜ `ios` ➜ select `RNAliyunOSS.xcodeproj`
 2. 在XCode  Project navigator面板中, 添加`RNAliyunOSS.a` to `Build Phases -> Link Binary With Libraries`
 3. 在XCode  Project navigator面板中，右键单击[framework] ➜ Add Files to [your project's name]. 进入node_modules ➜ aliyun-oss-rn-sdk ➜ AliyunSDK. Add AliyunOSSiOS.framework
 
 #### Android
 1. `settings.gradle`
     ```gradle
-    include ':aliyun-oss-react-native'
-    project(':aliyun-oss-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-react-native/android')
+    include ':aliyun-oss-michael-react-native'
+    project(':aliyun-oss-michael-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/aliyun-oss-michael-react-native/android')
     ```
 2. `build.gradle`
     ```gradle
     dependencies {
-        compile project(':aliyun-oss-react-native')
+        compile project(':aliyun-oss-michael-react-native')
     }
     ```
 
@@ -111,7 +111,7 @@ pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native
 
 * step-1:导入AliyunOSS
 ```
-import AliyunOSS from 'aliyun-oss-react-native'
+import AliyunOSS from 'aliyun-oss-michael-react-native'
 ```
 * step-2:开启调试模式 (可选)
 
@@ -392,7 +392,7 @@ parameters:
 * step-1:克隆项目并安装依赖包
 
 ```
-1. git clone https://github.com/aliyun/aliyun-oss-react-native.git
+1. git clone https://github.com/aliyun/aliyun-oss-michael-react-native.git
 2. cd Example
 3. npm install
 ```
